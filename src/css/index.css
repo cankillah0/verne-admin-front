@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #F5F5F5;
+}
+
+/*.mui-btn {
+  background-color: #40596D;
+  color: #FFF;
+}
+
+.mui-btn:hover,
+.mui-btn:focus,
+.mui-btn:active {
+  background-color: #446072;
+  color: #FFF;
+}*/
+
+.mui-textfield>input:focus~label,
+.mui-textfield>textarea:focus~label {
+  color: #40596D;
+}
+
+.mui-textfield>input:focus,
+.mui-textfield>textarea:focus {
+  border-color: #40596D;
+}
+
+/*.mui-btn.mui-btn--flat:active,
+.mui-btn.mui-btn--flat:focus,
+.mui-btn.mui-btn--flat:hover {
+  background-color: rgba(64,89,109,0.6);
+  color: white;
+}*/
+
+/********************** Fixes Bootstrap.css and Bootstrap-table.css ************************************/
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.page-item.active .page-link {
+  background-color: #40596D;
+  border-color: #40596D;
+}

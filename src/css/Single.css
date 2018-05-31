@@ -1,0 +1,35 @@
+.mui-select:focus>select {
+  border-color: #40596D !important;
+}
+
+.mui-row {
+  margin: 0;
+}
+
+.with-margin-bottom {
+  margin-bottom: 20px;
+}
+
+.sm-min-height {
+  height: 500px;
+}
+
+.lg-min-height {
+  height: 1020px;
+  overflow: hidden;
+}
+
+.custom-tbody {
+  height: 370px;
+  overflow-x: hidden;
+}
+
+.btn-div {
+  height: 60px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+
+.btn-div .mui-checkbox {
+  margin-left: 3px;
+}

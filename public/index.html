@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">!-->
+    <link href="//cdn.muicss.com/mui-0.9.36/css/mui.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <title>Globaler Kunde</title>
+    <script src="//cdn.muicss.com/mui-0.9.36/js/mui.min.js"></script>
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.js"></script>
+    <script>
+    jQuery(function($) {
+      var $bodyEl = $('.App'),
+          $sidedrawerEl = $('#sidedrawer');
+
+
+      // ==========================================================================
+      // Toggle Sidedrawer
+      // ==========================================================================
+      function showSidedrawer() {
+        // show overlay
+        var options = {
+          onclose: function() {
+            $sidedrawerEl
+              .removeClass('active')
+              .appendTo('.App');
+          }
+        };
+
+        var $overlayEl = $(mui.overlay('on', options));
+
+        // show element
+        $sidedrawerEl.appendTo($overlayEl);
+        setTimeout(function() {
+          $sidedrawerEl.addClass('active');
+        }, 20);
+      }
+
+
+      function hideSidedrawer() {
+        $bodyEl.toggleClass('hide-sidedrawer');
+      }
+
+
+      $('.js-show-sidedrawer').on('click', showSidedrawer);
+      $('.js-hide-sidedrawer').on('click', hideSidedrawer);
+
+
+      // ==========================================================================
+      // Animate menu
+      // ==========================================================================
+      var $titleEls = $('strong', $sidedrawerEl);
+
+      $titleEls
+        .next()
+        .hide();
+
+      $titleEls.on('click', function() {
+        $(this).next().slideToggle(200);
+      });
+    });
+
+
+    </script>
+
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

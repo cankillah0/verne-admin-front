@@ -1,0 +1,110 @@
+.mui-tabs__pane{
+  padding: 15px;
+}
+
+.react-bs-table-bordered {
+  border-radius: 0 !important;
+}
+
+.react-bs-table-tool-bar {
+  margin-bottom: 15px !important;
+}
+
+.table {
+  background-color: #FFFFFF;
+}
+
+.table > thead > tr > th {
+  border-bottom: 1px !important;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  padding: 15px;
+}
+
+.mui-tabs__bar {
+  background-color: #E0E0E0;
+}
+
+.mui-tabs__bar>li.mui--is-active>a {
+  color: #40596D;
+}
+
+.mui-tabs__bar>li.mui--is-active {
+  border-bottom: 2px solid #40596D;
+}
+
+.overview-tabsbar .mui-tabs__bar>li>a:hover {
+  cursor: pointer;
+}
+
+.btn-default {
+  background-image: none;
+  border-color: #ddd;
+  color: #40596D;
+}
+
+.btn-default:hover {
+  background-color: #eee;
+  border-color: #ddd;
+  color: #40596D;
+}
+
+.open > .dropdown-toggle.btn-default {
+  background-color: #FFF;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  background-image: none;
+  background-color: #eee;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+  color: #40596D;
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background-color: #40596D;
+  border-color: #40596D;
+  z-index: 0;
+}
+
+.form-group-sm .form-control {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  background-color: transparent;
+  color: rgba(0, 0, 0, .87);
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, .26);
+  outline: 0;
+  width: 100%;
+  padding: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  font-size: 16px;
+  font-family: inherit;
+  line-height: inherit;
+  background-image: none;
+  height: 32px;
+}
+
+.form-group-sm .form-control:focus {
+  border-width: 2px;
+  border-color: #40596D;
+  height: 33px;
+  margin-bottom: -1px;
+}

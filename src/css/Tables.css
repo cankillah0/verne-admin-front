@@ -1,0 +1,89 @@
+.theader-hidden thead {
+  display: none;
+}
+
+.custom-tbody .table > tbody > tr > td {
+  padding: 9px;
+}
+
+.custom-tbody .react-bs-container-body td{
+  border: none;
+}
+
+.custom-tbody div.btn-group.btn-group-sm  {
+  display: none;
+}
+
+.custom-tbody .react-bs-container-body td:hover,
+.custom-tbody .react-bs-container-body td input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
+.custom-tbody .react-bs-container-body td:focus{
+  outline: none;
+}
+
+.scroll-panel div.col-xs-6.col-sm-6.col-md-6.col-lg-4{
+  width: 100%;
+}
+
+.scroll-panel .form-group-sm .form-control {
+  margin-top: 9px;
+}
+
+input[type="checkbox"]:disabled+label{
+     color: red;
+}
+
+.custom-tbody .react-bs-container-body td input[type="checkbox"],
+.custom-tbody .react-bs-container-body td input[type="radio"] {
+  margin-left: -10px;
+}
+
+.react-bs-table-del-btn {
+  font-weight: 500;
+  font-size: 14px !important;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #e38d13;
+  background-color: #FFF;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  display: inline-block;
+  height: 36px;
+  padding: 0 26px !important;
+  margin: 6px 0;
+  border-radius: 2px !important;
+  border-color: #e38d13;
+  cursor: pointer;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  background-image: none;
+  text-align: center;
+  line-height: 36px !important;
+  vertical-align: middle;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: inherit;
+  letter-spacing: .03em;
+  position: relative;
+  overflow: hidden;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+.react-bs-table-del-btn:hover {
+  /*-webkit-box-shadow: 0 0 2px rgba(0, 0, 0, .12), 0 2px 2px rgba(0, 0, 0, .2);
+  box-shadow: 0 0 2px rgba(0, 0, 0, .12), 0 2px 2px rgba(0, 0, 0, .2);*/
+}
+
+.btn-warning:focus, .btn-warning.focus {
+  border-color: #e38d13;
+}
+
+.react-bs-table .react-bs-container-header>table>thead>tr>th .filter::-webkit-input-placeholder, .react-bs-table .react-bs-container-header>table>thead>tr>th .number-filter-input::-webkit-input-placeholder, .react-bs-table .react-bs-container-header>table>thead>tr>th .select-filter option[value=''], .react-bs-table .react-bs-container-header>table>thead>tr>th .select-filter.placeholder-selected {
+  font-style: normal !important;
+}

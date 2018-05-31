@@ -1,0 +1,28 @@
+.login-container {
+  padding: 15px;
+}
+
+.panel-heading {
+  padding: 15px 30px;
+}
+
+.panel-body {
+  padding: 30px;
+}
+
+.form-horizontal .control-label {
+  text-align: left;
+}
+
+.label-size  {
+  font-size: 13px;
+}
+
+.btn {
+  padding: 8px 20px;
+  text-transform: uppercase;
+}
+
+#login-btn {
+  float: right;
+}
